@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  background: #ff7e5f;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #feb47b;
+}
+
+.weather-card {
+  margin-top: 15px;
+}
+
+.city-name {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.temp {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.detail-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.detail-item span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.error-msg {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.loading {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+.forecast-title {
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.forecast-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 14px;
+  border-radius: 10px;
+  min-width: 75px;
+  text-align: center;
+}
+
+.f-day {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.f-temp {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.f-cond {
+  font-size: 0.75rem;
+}
