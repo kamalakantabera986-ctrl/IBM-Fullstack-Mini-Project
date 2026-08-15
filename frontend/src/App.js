@@ -20,7 +20,7 @@ function App() {
 
     try {
       // 1. Current Weather Call
-      const res = await axios.get(`http://localhost:5001/api/weather?city=${encodeURIComponent(city)}`);
+      const res = await axios.get(`https://ibm-fullstack-mini-project.onrender.com/api/weather?city=${encodeURIComponent(city)}`);
       setWeather(res.data);
 
       // 2. Demo Forecast List (List Rendering demonstration)
